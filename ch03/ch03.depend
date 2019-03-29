@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1537640125 source:d:\devzone\aoapcii\ch03\t3-10 uva1587.cpp
+	<cstdio>
+	<cstring>
+	<algorithm>
+
+1537640106 source:d:\devzone\aoapcii\ch03\t3-10 uva1587.2.cpp
+	<cstdio>
+	<cstring>
+	<algorithm>
+
