@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1554013314 source:/home/dotgua/aoapcii/ch04/d4-1 uva1339.cpp
+	<stdio.h>
+	<stdlib.h>
+	<algorithm>
+	<string.h>
+
+1554021945 source:/home/dotgua/aoapcii/ch04/d4-2 uva489.cpp
+	<cstdio>
+	<cstring>
+
+1554022556 source:/home/dotgua/aoapcii/ch04/d4-3 uva133.cpp
+	<cstdio>
+	<cstring>
+
