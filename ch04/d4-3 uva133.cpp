@@ -20,7 +20,7 @@ int step(int pos, int dis, int dir) {
     return p+1;
 }
 
-int main() {
+int main133() {
     #ifdef LOCAL
     freopen("133.in", "r", stdin);
     freopen("133.out", "w", stdout);

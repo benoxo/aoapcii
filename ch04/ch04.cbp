@@ -32,7 +32,11 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
-		<Unit filename="main.cpp" />
+		<Unit filename="d4-1 uva1339.cpp" />
+		<Unit filename="d4-2 uva489.cpp" />
+		<Unit filename="d4-3 uva133.cpp" />
+		<Unit filename="d4-4 uva213.cpp" />
+		<Unit filename="d4-4 uva213_2.cpp" />
 		<Extensions>
 			<code_completion />
 			<debugger />
