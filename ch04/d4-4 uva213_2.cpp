@@ -45,9 +45,9 @@ int main213() {
             len = read_data(3);
             if (len == 0) break;
             while (true) {
-                read_data(len, data);
+                data = read_data(len);
                 if (data == (1 << len)-1) break;
-                putchar(codes[bit][data]);
+                putchar(codes[len][data]);
             }
         }
 
