@@ -31,6 +31,6 @@
 *.out
 *.app
 
-.vscode
-.bin
-.obj
+.vscode/
+bin/
+obj/

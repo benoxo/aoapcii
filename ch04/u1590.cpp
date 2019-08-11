@@ -16,7 +16,7 @@ int main() {
 		}
 		
 		// check the start diff part
-		int start = 3, f = 0;
+		int start = 4, f = 0;
 		for (int s = 0; s < 4; s++) {
 			for (int i = 0; i < N-1; i++) {
 				if (ips[i][s] != ips[i+1][s]) {
