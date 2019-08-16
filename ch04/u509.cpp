@@ -7,7 +7,7 @@ using namespace std;
 const char HEX[] = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'};
 int D, S, B;
 char parity;
-vector<string> data;
+vector<string> vdata;
 int nset;	// record the #disk set
 	
 bool Validate() {
@@ -19,7 +19,7 @@ bool Validate() {
 		int nxbit = 0;	// number of x
 		int xpos = -1;	// index of x
 		for (int d = 0; d < D; d++) {
-			char cbit = data[d][sb];
+			char cbit = vdata[d][sb];
 			if ( cbit == 'x' ) {
 				nxbit++;
 				xpos = d;
@@ -32,7 +32,7 @@ bool Validate() {
 			break;
 		}
 		// recover the data
-		if (nxbit) data[xpos][sb] = (sum + fbit)%2 + '0';
+		if (nxbit) vdata[xpos][sb] = (sum + fbit)%2 + '0';
 	}
 	return valid;
 }
@@ -44,12 +44,12 @@ string GetContents() {
 		for (int d = 0; d < D; d++) {
 			if (b % D == d) continue;
 			
-			string bistr = data[d].substr(b*S, S);
+			string bistr = vdata[d].substr(b*S, S);
 			datastr += bistr;
 		}
 	}
 	
-	//  add extra ¡®0¡¯ bits
+	//  add extra '0' bits
 	while (datastr.size() % 4) {
 		datastr.push_back('0');
 	}
@@ -79,12 +79,12 @@ int main() {
 		cin >> S >> B;
 		getchar(); // filter \n 
 		cin >> parity;
-		data.clear();
+		vdata.clear();
 		
 		for (int d = 0; d < D; d++) {
 			string strdata;
 			cin >> strdata;
-			data.push_back(strdata);
+			vdata.push_back(strdata);
 		}
 		
 		if (!Validate()) {

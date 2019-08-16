@@ -27,6 +27,10 @@
             ],
             "options": {
                 "cwd": "D:\\Software\\Develop\\mingw-w64\\mingw64\\bin"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
             }
         }
     ],
