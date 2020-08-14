@@ -34,3 +34,7 @@
 .vscode/
 bin/
 obj/
+data/
+problem/
+in.txt
+out.txt
